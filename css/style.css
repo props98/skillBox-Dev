@@ -1,0 +1,38 @@
+body {
+  padding: 0 100px;
+  font: 1em 'Roboto', sans-serif;
+  font-weight: 300;
+}
+header {
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  font-size: 20px;
+  margin-right: 20px;
+  color: rgb(0,0,0);
+  text-decoration: none;
+}
+header .phone {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: rgb(0,0,0);
+}
+header .order-call {
+  bottom: 1px solid rgba(0,0,0);
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #fff;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+.phone-container {
+  display: flex;
+  align-items: center;
+}
