@@ -1,6 +1,9 @@
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>SkillBox</title>
 </head>
@@ -8,16 +11,20 @@
 <link rel="stylesheet" href="/css/normolize.css">
 <link rel="stylesheet" href="/css/style.css">
 <body>
-  <div class="popup-container">
-    <div class="popup">
+
+  <section class="modal">
+    <div class="modal_content">
       <a href="#" class="close-icon"></a>
       <h3>Отправка</h3>
       <div class="fields">
+        <input type="text" placeholder="e-mail">
         <input type="text" placeholder="Ваше имя">
       </div>
-      <button></button>
+      <button class="popUp-btn-close">X</button>
+      <button class="modal_btn btn-send">Отправить</button>
     </div>
-  </div>
+  </section>
+
   <div class="container">
     <header>
       <nav>
@@ -26,7 +33,7 @@
         <a href="#">Стоимость</a>
       </nav>
       <div class="phone-container">
-        <a class="phone" href="#">555 55 55</a>
+        <a class="phone" href="#">+7 800 495 55 55</a>
         <button class="btn order-call_btn">Заказать звонок</button>
       </div>
     </header>
@@ -35,8 +42,8 @@
     <section class="banner">
       <div class="banner_info">
         <h1 class="banner_title">Peter Griffin</h1>
-        <p class="banner_text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-        <button class="btn banner_btn">узнать больше</button>
+        <p class="banner_text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты</p>
+        <button class="btn banner-btn">Узнать больше</button>
       </div>
       <div class="banner_img">
         <img src="../img/man.png" width="302" alt="photo: man">
@@ -44,7 +51,7 @@
     </section>
 
     <section class="skills">
-      <h2>Что я делаю</h2>
+      <h2 class="skills_title">Что я делаю</h2>
       <ul class="skills_list">
         <li class="skills_item"><img src="../img/1.png" width="62"></img>
           <p>Далеко-далеко за словесными горами в стране.</p>
@@ -56,19 +63,19 @@
           <p>алеко-далеко за словесными горами в стране гласных и согласных живут.</p>
         </li>
         <li class="skills_item"><img src="../img/4.png" width="62"></img>
-          <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Всеми</p>
+          <p>Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.</p>
         </li>
       </ul>
       <button class="btn skills-btn">Узнать подробности</button>
     </section>
 
     <section class="works">
-      <h2>Примеры работ</h2>
+      <h2 class="works_title">Примеры работ</h2>
       <ul class="works_list">
-        <li class="works_item"><img src="../img/1.png" width="62"></img><p>Далеко-далеко за словесными горами в стране.</p></li>
-        <li class="works_item"><img src="../img/2.png" width="62"></img><p>Далеко-далеко за словесными горами в стране гласных
+        <li class="works_item"><img src="../img/w1.png" width="62"></img><p>Далеко-далеко за словесными горами в стране.</p></li>
+        <li class="works_item"><img src="../img/w2.png" width="62"></img><p>Далеко-далеко за словесными горами в стране гласных
         и согласных живут рыбные тексты.</p></li>
-        <li class="works_item"><img src="../img/3.png" width="62"></img><p>Далеко-далеко за словесными горами в стране гласных
+        <li class="works_item"><img src="../img/w3.png" width="62"></img><p>Далеко-далеко за словесными горами в стране гласных
         и согласных живут.</p></li>
       </ul>
       <button class="btn skills-btn">Узнать подробности</button>
@@ -78,9 +85,8 @@
     <section class="price">
       <div class="container">
         <div class="price-wrapper">
-          <h2>Адаптивная верстка под все устройства и браузеры от 1000руб. всего за 4 часа*</h2>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс заманивший, меня, ее
-            вопроса пунктуация выйти подзаголовок на берегу продолжил даль они заголовок маленький снова?</p>
+          <h2 class="price_title">Адаптивная верстка под все устройства и браузеры от 1000руб. всего за 4 часа*</h2>
+          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс заманивший</p>
         </div>
         </div>    
     </section>
@@ -90,14 +96,20 @@
       <div class="container">
         <div class="footer-menu">
           <ul class="footer-menu_list">
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="">Работы</a></li>
+            <li class="footer-menu_item">
+              <a class="footer-menu_link" href="#">Услуги</a>
+            </li>
+            <li class="footer-menu_item">
+              <a class="footer-menu_link" href="#">Портфолио</a>
+            </li>
+            <li class="footer-menu_item">
+              <a class="footer-menu_link" href="">Работы</a>
+            </li>
           </ul>
         </div>
         <div class="footer-contact">
-          <a href="mailto:">mmmm@mail.ru</a><br>
-          <a href="tel:+">555 55 55</a>
+          <a class="footer-contact_link" href="mailto:mmmm@mail.ru">mmmm@mail.ru</a>
+          <a class="footer-contact_link" href="tel:++7 800 495 55 55">+7 800 495 55 55</a>
         </div>
         <div class="footer-sicial">
           <button class="btn btn-social">Заказать звонок</button>
@@ -127,8 +139,20 @@
       </div>
     </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script>
+    let popUp = document.querySelector('.modal');
+    let openPopUp = document.querySelector('.order-call_btn');
+    let closePopUp = document.querySelector('.popUp-btn-close')
+
+    openPopUp.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popUp.classList.add('modal-show');
+    });
+
+    closePopUp.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popUp.classList.remove('modal-show');
+    });
 
   </script>
 </body>
